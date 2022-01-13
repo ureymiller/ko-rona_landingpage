@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ko-rona</title>
+</head>
+<body>
+    <div class="topspace">
+            <img class="toppic" src="img/toppic.svg" alt="logo">
+            <h1 id="title">ko-rona</h1>
+    </div>
+
+    <nav>
+        <div class="logo"><a href="#">ko-rona</a></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><button class="contact-button">Contact</button></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div id="about" class="section">
+            <h2>Who are we?</h2>
+            <div class="about">
+                <div class="vid-container">
+                    <iframe class="ytvid" src="https://www.youtube.com/embed/Xl0tEfLve1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="aboutus-container">
+                    <p>
+                        <b>KO-RONA</b> is an upcoming austrian biotech startup that specializes in corona-related services and products, which include vaccinations, testing and air cleaning. Check the embed Youtube video for more information.
+                    </p>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div id="services" class="section">
+            <h2>Our services</h2>
+            <div class="services">
+                <div class="service" id="s1">
+                    <h3>Vaccination</h3>
+                    <ul>
+                        <li>Pfizer</li>
+                        <li>Moderna</li>
+                        <li>AstraZeneca</li>
+                        <li>Janssen</li>
+                    </ul>
+                    <button>More</button>
+                </div>
+                <div class="service" id="s2">
+                    <h3>Testing</h3>
+                    <ul>
+                        <li>antibody</li>
+                        <li>antigen</li>
+                        <li>PCR</li>
+                    </ul>
+                    <button>More</button>
+                </div>
+                <div class="service" id="s3">
+                    <h3>Air cleaning</h3>
+                    <ul>
+                        <li>portable</li>
+                        <li>ionizing</li>
+                        <li>in-duct</li>
+                    </ul>
+                    <button>More</button>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="section">
+            <h2>Sign up for our newsletter</h2>
+            <form action="#" method="POST">
+                <div class="mail-container">
+                    <label for="email">EMAIL:</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+                <button type="submit">sign up</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 2022 Ureymiller - All Rights Reserved</p>
+        <ul>
+            <li>Privacy</li>
+            <li>Terms of Use</li>
+            <li>Legal Notice</li>
+        </ul>
+    </footer>
+</body>
+</html>
