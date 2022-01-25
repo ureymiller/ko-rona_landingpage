@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 body {
@@ -25,11 +25,12 @@ body {
     margin: 0 auto;
 }
 #title {
-    font-size: 15vh;
+    font-size: 7em;
     text-shadow: 0 0 20px #00000010;
+    text-align: center;
 }
 nav {
-    height: 10vh;
+    height: 4em;
     background-color: #ff0000;
     box-shadow: 0 0 20px #00000010;
     text-transform: uppercase;
@@ -43,9 +44,9 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    margin: 10% 4vw;
-    padding: 0 1vw;
-    font-size: 2.5vw;
+    margin: 1em 4vw;
+    padding: 0 0.5em;
+    font-size: 1em;
     height: 80%;
     background-color: #323232;
 }
@@ -56,13 +57,12 @@ nav {
 .service button {
     background-color: #0069ff;
     color: #ffffff;
-    padding: 5px 10px;
-    border-radius: 15px;
+    padding: 0.5em 1em;
     border: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2vw;
+    font-size: 1em;
     text-transform: uppercase;
-    letter-spacing: 0.5vw;
+    letter-spacing: 0.3em;
 }
 .contact-button:hover,
 .service button:hover,
@@ -78,8 +78,8 @@ nav ul {
 }
 nav ul li {
     margin: 0 3vw;
-    font-size: 2vw;
-    letter-spacing: 0.5vw;
+    font-size: 1em;
+    letter-spacing: 0.3em;
 }
 nav a {
     color: #ffffff;
@@ -96,38 +96,38 @@ li a:hover {
 .section {
     height: auto;
     background-color: #626161;
-    margin: 5vh 2vw;
-    padding: 4vh 0;
+    margin: 2em;
+    padding: 1em;
 }
 #about:target,
 #services:target {
-    padding-top: 10vh;
-    margin-top: -10vh;
+    padding-top: 3em;
+    margin-top: -3em;
 }
 h2 {
     text-transform: uppercase;
-    font-size: 5vh;
+    font-size: 2em;
     text-align: center;
-    padding: 2.5vh;
+    padding: .5em;
 }
 h3 {
     text-transform: uppercase;
-    font-size: 4vh;
-    letter-spacing: 1.5px;
+    font-size: 1.4em;
+    letter-spacing: .05em;
     text-align: center;
-    padding: 2vh;
+    padding: 1em .5em;
 }
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1vw;
+    grid-gap: 1em;
     justify-content: center;
     align-items: center;
-    margin: 1vw;
+    margin: 1em;
 }
 .vid-container,
 .aboutus-container {
-    padding: 1vw;
+    padding: 0.5em;
 }
 .ytvid {
     width: 44.5vw;
@@ -135,58 +135,50 @@ h3 {
     box-shadow: 0 0 20px #00000010;
 }
 p, label {
-    font-size: 3vh;
+    font-size: 1em;
     letter-spacing: 2px;
     line-height: max(4vw, 30px);
     text-align: center;
 }
 b {
     background-color: red;
-    padding: 0.3vh;
+    padding: 0.2em;
     letter-spacing: normal;
     box-shadow: 0 0 20px #00000010;
 }
 br {
-    height: 1vw;
+    height: 1em;
     display: block;
 }
 
 .services {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5em;
     justify-content: center;
-    align-items: center;
-    margin: 2vw;
+    margin: 1em 0;
 }
 .service {
-    padding: 2vh 0;
-    height: 100%;
+    width: fit-content;
+    flex-basis: 30%;
+    min-width: 14rem;
     background-color: #ff0000;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     box-shadow: 0 0 20px #00000010;
-}
-#s1 {
-    grid-column: 1;
-}
-#s2 {
-    grid-column: 2;
-}
-#s3 {
-    grid-column: 3;
 }
 .service ul {
     text-align: center;
-    font-size: 3.5vh;
+    font-size: 1.2em;
     list-style-type: square;
-    line-height: max(4vw, 30px);
+    line-height: 1.5em;
 }
 .service button {
-    margin: 2vh;
-    font-size: 3.5vh;
+    margin: 0.5em 15%;
+    font-size: 1.5em;
+    padding: 0.5em 0;
 }
 
 form{
@@ -197,18 +189,18 @@ form{
     flex-wrap: wrap;
 }
 .mail-container {
-    width: 90vw;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 input[type="email"]{
     width: 85%;
     margin: 2vw 0;
     display: inline;
-    font-size: 3vh;
-    letter-spacing: 2px;
-    padding: 1vh;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    padding: 0.4em;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     background-color: transparent;
@@ -219,14 +211,14 @@ button[type="submit"] {
     width: 50vw;
     background-color: #0069ff;
     color: #ffffff;
-    padding: 5px 10px;
-    border-radius: 15px;
+    padding: 0.5em 1em;
+
     border: none;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.5vw;
-    margin: 2vh;
-    font-size: 3.5vh;
+    letter-spacing: 0.5em;
+    margin: .5em;
+    font-size: 1.5em;
 }
 
 footer {
@@ -238,14 +230,36 @@ footer {
 }
 footer p,
 footer li {
-    font-size: 1.5vh;
+    font-size: 0.6em;
     letter-spacing: normal;
-    margin: 0 20px;
+    margin: 0 1em;
     line-height: normal;
-    padding: 5px 10px;
+    padding: .5em 1em;
 }
 footer ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+}
+
+@media screen and (orientation: portrait) {
+    :root {
+        font-size: 10px;
+    }
+    nav ul li {
+        margin: 0 .7em;
+        font-size: 1em;
+        letter-spacing: 0.1em;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    .ytvid {
+        width: calc(44.5vw * 1.5);
+        height: calc(25vw * 1.5);
+    }
+    .mail-container {
+        flex-direction: column;
+    }
 }
